@@ -1,0 +1,66 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kazakhstan</title>
+  <link rel="stylesheet" href="{% static 'posts/css/main.css' %}">
+</head>
+<body>
+  <nav>
+   {% block heading %} <h1>Kazakhstan</h1> {% endblock  %}
+    <div class="user">
+      <a href="{% url 'home' %}">Home</a>
+      <a href="{% url 'registration' %}">Registration</a>
+    </div>
+  </nav>
+  
+  {% block content %}
+  <section class="articles">
+    
+     <div class="article">
+      <div class="left">
+        <img src="{% static 'posts/img/cities.jpg' %}" alt="">
+      </div>
+      <div class="right">
+        <h1>Қазақстан қалалары</h1>
+        <p class="description">Қазақстан - дала және көшпенділердің негізгі мақтанышы болып табылады байтақ ел. Бірақ бұл барлық емес. түрлі ландшафт және Шығыс тыныштық ұштастыра Батыс салтанат асыруға ғажайып қала бар тамаша табиғаты - саяхатшылар үшін осындай тартымды елде. Олардың сәулет қазіргі заманғы, сонымен қатар ежелгі ғана емес ұрындыруы. Сонымен қатар, ол мұқият өткен дәстүрін сақтайды нақты экзотикалық Азия мәдениеті болып табылады.</p>
+       
+      </div>
+    </div> 
+    
+    
+    <div class="article">
+      <div class="left">
+        <img src="{% static 'posts/img/mereke.jpg' %}" alt="">
+      </div>
+      <div class="right">
+        <h1>Қазақстан Республикасының мерекелері</h1>
+        <p class="description">Қазақстан Республикасының мерекелері ҚР Президентінің 1998 жылы 20 қантардағы №3827 Жарлығы мен оған 2003 жылы 15 карашада енгізілген өзгерістерге сәйкес заңды түрде белгіленген ұлттық, мерекелік және кәсіби мерекелер жүйесі. Ұлттық мерекелер — Қазақстан Республикасындағы жаңа оқиғаларға, оның ішінде жеке мемлекет болып қалыптасудағы тарихи жағдайларға байланысты белгіленеді. Қазақстан Республикасында ұлттық мерекенің ең бастысы — 16-17 желтоқсанда аталып өтетін Тәуелсіздік күні.</p>
+    
+      </div>
+    </div>
+    
+    <div class="article">
+      <div class="left">
+        <img src="{% static 'posts/img/tagamdar.jpeg' %}" alt="">
+      </div>
+      <div class="right">
+        <h1>Ұлттық тағамдар</h1>
+        <p class="description"> Қазақ халқының дәстүрлі тағамдану жүйесі қоршаған экологиялық жүйемен және шаруашылығымен тығыз байланысты болды. Сондықтан қазақтың әрбір дәстүрлі тағамы денсаулыққа қажетті құндылық бола отырып, пайдасының зор екенін білеміз. Бұл ғылыми тұрғыдан да әлдеқашан дәлелденіп қойған. Қазақ халқының өмірінде ет тағамдары ең басты орынды иеленеді. Бұл тағам түрлерінің емдік, тұрмыстық қасиеттері бар. </p>
+      
+      </div>
+    </div>
+  </section>
+    {% endblock %} 
+  
+  <footer>
+    <div class="social-media">
+      <p><i class="fab fa-facebook"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+      <p><i class="fab fa-instagram"></i></p>
+    </div>
+  </footer>
+</body>
+</html>
